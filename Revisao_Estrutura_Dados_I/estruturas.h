@@ -1,3 +1,4 @@
+//O algoritimo define uma estrutura base de arquivos CSV que permite que outros algoritimos tratarem e ordenem os dados nesses arquivos.
 #ifndef ESTRUTURAS_H
 #define ESTRUTURAS_H
 
