@@ -553,68 +553,63 @@ Desenvolva individualmente uma versão funcional.
 
 Checklist:
 
-- [ ] Criar `Paciente`;
-- [ ] Criar `Node`;
-- [ ] Criar `FilaAtendimento`;
-- [ ] Implementar `adicionar()`;
-- [ ] Implementar `atender()`;
-- [ ] Implementar `listar()`;
-- [ ] Implementar `esta_vazia()`;
-- [ ] Implementar `tamanho()`;
-- [ ] Testar pelo menos cinco pacientes;
-- [ ] Documentar um erro encontrado e sua correção.
+✓ Criar `Paciente`;
+✓ Criar `Node`;
+✓ Criar `FilaAtendimento`;
+✓ Implementar `adicionar()`;
+✓ Implementar `atender()`;
+✓ Implementar `listar()`;
+✓ Implementar `esta_vazia()`;
+✓ Implementar `tamanho()`;
+✓ Testar pelo menos cinco pacientes;
+✓ Documentar um erro encontrado e sua correção.
 
 ## 26. Checklist de aprendizagem
 
-- [ ] Entendi o conceito de endereço de memória.
-- [ ] Sei diferenciar ponteiro de referência.
-- [ ] Sei utilizar `id()`.
-- [ ] Entendi compartilhamento de referências.
-- [ ] Sei diferenciar referência e cópia.
-- [ ] Entendi objetos mutáveis.
-- [ ] Entendi passagem de objetos para funções.
-- [ ] Consigo criar um `Node`.
-- [ ] Consigo conectar nós.
-- [ ] Consigo percorrer uma estrutura encadeada.
-- [ ] Consigo identificar erros em uma estrutura dinâmica.
-- [ ] Consigo implementar uma fila.
-- [ ] Consigo explicar minha solução.
+✓ Entendi o conceito de endereço de memória.
+✓ Sei diferenciar ponteiro de referência.
+✓ Sei utilizar `id()`.
+✓ Entendi compartilhamento de referências.
+✓ Sei diferenciar referência e cópia.
+✓ Entendi objetos mutáveis.
+✓ Entendi passagem de objetos para funções.
+✓ Consigo criar um `Node`.
+✓ Consigo conectar nós.
+✓ Consigo percorrer uma estrutura encadeada.
+✓ Consigo identificar erros em uma estrutura dinâmica.
+✓ Consigo implementar uma fila.
+✓ Consigo explicar minha solução.
 
 ## 27. Reflexão final
 
 ### O que é uma referência em Python?
 
 ```text
-____________________________________________________
-____________________________________________________
+Uma referência em Python é uma variável que aponta para um objeto armazenado na memória, permitindo acessá-lo e modificá-lo.
 ```
 
 ### Qual a diferença entre `b = a` e `b = a.copy()`?
 
 ```text
-____________________________________________________
-____________________________________________________
+b = a faz  com que b aponte para o mesmo objeto que a, enquanto b = a.copy() cria uma cópia independente do objeto.
 ```
 
 ### Por que uma estrutura encadeada precisa de referências?
 
 ```text
-____________________________________________________
-____________________________________________________
+Porque as referências conectam cada nó ao próximo, permitindo percorrer e organizar os elementos da estrutura encadeada.
 ```
 
 ### Qual erro você encontrou durante a depuração?
 
 ```text
-____________________________________________________
-____________________________________________________
+O principal erro foi não atualizar corretamente a referência do próximo nó ao inserir pacientes na fila, o que poderia quebrar a ligação entre os elementos.
 ```
 
 ### Como referências ajudam a compreender estruturas dinâmicas?
 
 ```text
-____________________________________________________
-____________________________________________________
+As referências permitem ligar os elementos entre si e modificar a estrutura durante a execução, facilitando a compreensão de estruturas dinâmicas como listas encadeadas e filas.
 ```
 
 ## 28. Síntese da aula
