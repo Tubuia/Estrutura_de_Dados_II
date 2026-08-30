@@ -553,31 +553,31 @@ Desenvolva individualmente uma versão funcional.
 
 Checklist:
 
-✓ Criar `Paciente`;
-✓ Criar `Node`;
-✓ Criar `FilaAtendimento`;
-✓ Implementar `adicionar()`;
-✓ Implementar `atender()`;
-✓ Implementar `listar()`;
-✓ Implementar `esta_vazia()`;
-✓ Implementar `tamanho()`;
-✓ Testar pelo menos cinco pacientes;
+✓ Criar `Paciente`;\
+✓ Criar `Node`;\
+✓ Criar `FilaAtendimento`;\
+✓ Implementar `adicionar()`;\
+✓ Implementar `atender()`;\
+✓ Implementar `listar()`;\
+✓ Implementar `esta_vazia()`;\
+✓ Implementar `tamanho()`;\
+✓ Testar pelo menos cinco pacientes;\
 ✓ Documentar um erro encontrado e sua correção.
 
 ## 26. Checklist de aprendizagem
 
-✓ Entendi o conceito de endereço de memória.
-✓ Sei diferenciar ponteiro de referência.
-✓ Sei utilizar `id()`.
-✓ Entendi compartilhamento de referências.
-✓ Sei diferenciar referência e cópia.
-✓ Entendi objetos mutáveis.
-✓ Entendi passagem de objetos para funções.
-✓ Consigo criar um `Node`.
-✓ Consigo conectar nós.
-✓ Consigo percorrer uma estrutura encadeada.
-✓ Consigo identificar erros em uma estrutura dinâmica.
-✓ Consigo implementar uma fila.
+✓ Entendi o conceito de endereço de memória.\
+✓ Sei diferenciar ponteiro de referência.\
+✓ Sei utilizar `id()`.\
+✓ Entendi compartilhamento de referências.\
+✓ Sei diferenciar referência e cópia.\
+✓ Entendi objetos mutáveis.\
+✓ Entendi passagem de objetos para funções.\
+✓ Consigo criar um `Node`.\
+✓ Consigo conectar nós.\
+✓ Consigo percorrer uma estrutura encadeada.\
+✓ Consigo identificar erros em uma estrutura dinâmica.\
+✓ Consigo implementar uma fila.\
 ✓ Consigo explicar minha solução.
 
 ## 27. Reflexão final
