@@ -83,6 +83,8 @@ Exemplo:
 A < B < C < D < ...****
 ```
 
+---
+
 # ▶️ Guia de Execução do Jogo
 
 ## 1. Download do Projeto
@@ -97,7 +99,6 @@ cpp-data-structures-binary-tree-traversal-simulator.zip
 
 Após o download, extraia o conteúdo do arquivo para um diretório de sua preferência.
 
----
 
 ## 2. Abrir a Pasta Principal
 
@@ -119,8 +120,6 @@ cpp-data-structures-binary-tree-traversal-simulator
 └── README.md
 ```
 
----
-
 ## 3. Acessar a Pasta Start
 
 Abra a pasta:
@@ -136,8 +135,6 @@ start
 │
 └── TreeProject
 ```
-
----
 
 ## 4. Acessar a Pasta TreeProject
 
@@ -157,8 +154,6 @@ TreeProject
 ├── TreeProject
 └── TreeProject.sln
 ```
-
----
 
 ## 5. Acessar a Pasta Bin
 
@@ -192,8 +187,6 @@ bin
 ├── TreeProjectd.exe
 └── TreeProjectd.pdb
 ```
-
----
 
 ## 6. Executar o Simulador
 
@@ -254,6 +247,11 @@ O executável depende desses arquivos para carregar corretamente os recursos gr�
 ```
 
 Após a execução do arquivo `.exe`, o simulador será iniciado e estará pronto para o estudo interativo de Árvores Binárias e Árvores Binárias de Busca (BST).
+
+---
+
+## Link da apresentação
+- https://canva.link/oqsyj2rkz6t7ty7
 
 ---
 
