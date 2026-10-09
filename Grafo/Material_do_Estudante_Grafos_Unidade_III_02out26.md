@@ -40,8 +40,9 @@ Ao final das atividades, você deverá ser capaz de:
     ou o link da atividade.
 
 ------------------------------------------------------------------------
+# 3. ATIVIDADES:
 
-## 3. Atividade 1 - Desenhando um grafo
+## Atividade 1 - Desenhando um grafo
 
 ### Proposta
 
@@ -72,9 +73,24 @@ Considere:
 -   Graphviz;
 -   Google Colab com Python e NetworkX.
 
+## Resposta:
+
+1. ![Grafo da atividade 1](./r1.png)
+2. V = 5
+3. E = 6
+4. `|V|` = 5
+5. `|E|` = 6
+6. Existe um laço na veertice 4
+7. Grau de Cada Vertice:
+- 1 = 3
+- 2 = 2
+- 3 = 2
+- 4 = 4
+- 5 = 1
+
 ------------------------------------------------------------------------
 
-## 4. Atividade 2 - Incidência e adjacência
+## Atividade 2 - Incidência e adjacência
 
 Utilize o grafo construído na Atividade 1.
 
@@ -103,9 +119,22 @@ Utilize o grafo construído na Atividade 1.
 -   diagrams.net;
 -   quadro colaborativo indicado pela professora.
 
+## Resposta:
+1. 
+| Vértice | Vértices adjacentes | Arestas incidentes          |
+|---------|---------------------|-----------------------------|
+| 1       | 2, 4, 5             | (1,2), (1,4), (1,5)         |
+| 2       | 1, 3                | (1,2), (2,3)                |
+| 3       | 2, 4                | (2,3), (3,4)                |
+| 4       | 1, 3, 4             | (1,4), (3,4), (4,4)         |
+| 5       | 1                   | (1,5)                       | \n
+2. Os vértices 2 e 4 são vizinhos porque eles possuem uma ligação direta.
+3. Os vértices 3 e 5 não são vizinhos porque eles não possuem uma ligação direta.
+
+
 ------------------------------------------------------------------------
 
-## 5. Atividade 3 - Modelagem de uma rede de amizades
+## Atividade 3 - Modelagem de uma rede de amizades
 
 Considere quatro pessoas:
 
@@ -136,9 +165,18 @@ Crie uma pequena rede de amizades entre essas pessoas.
 -   papel;
 -   Google Colab com NetworkX.
 
+## Resposta:
+1. V = {João, Carolina, Maria, Marco}
+2. E = {(João, Carolina), (João, Maria), (João, Marco), (Carolina, Maria)}
+3. ![Grafo da atividade 3](./r3.png)  
+As Vertices representam as pessoas e as Arestas representam as amizades. 
+5. O grafo não é dirigido.
+6. Ele é um grafo com Relação Simetrica
+7. Maior Grau: João(3)
+
 ------------------------------------------------------------------------
 
-## 6. Atividade 4 - Modelagem de ruas de mão única
+## Atividade 4 - Modelagem de ruas de mão única
 
 ### Situação
 
@@ -164,9 +202,20 @@ mão única.
 -   Graphviz;
 -   Google Colab com NetworkX.
 
+## Resposta:
+
+1.  ![Grafo da atividade 4](./r4.png)
+2.  Conjuntos  
+    - V = {R1, R2, R3, R4}
+    - E = {(R1, R2), (R1, R3), (R2, R4), (R3, R4)}
+4.  vértice R1:
+    -   Grau de entrada: 0
+    -   Grau de saída: 2
+5.  O Grafo não dirigido não representa adequadamente essa situação porque ele não possui direção nas arestas, impossibilitando que o sentido da via seja mostrado no grafo.
+
 ------------------------------------------------------------------------
 
-## 7. Atividade 5 - Desafio de isomorfismo
+## Atividade 5 - Desafio de isomorfismo
 
 A professora apresentará dois grafos para comparação.
 
@@ -200,7 +249,7 @@ A professora apresentará dois grafos para comparação.
 
 ------------------------------------------------------------------------
 
-## 8. Atividade 6 - Construindo subgrafos
+## Atividade 6 - Construindo subgrafos
 
 A partir do grafo `G` indicado pela professora, construa **dois
 subgrafos diferentes**.
@@ -235,7 +284,7 @@ subgrafos diferentes**.
 
 ------------------------------------------------------------------------
 
-## 9. Atividade 7 - Desafio da sequência de graus
+## Atividade 7 - Desafio da sequência de graus
 
 Construa um **grafo simples** de acordo com a sequência de graus
 indicada pela professora.
@@ -268,7 +317,7 @@ indicada pela professora.
 
 ------------------------------------------------------------------------
 
-## 10. Plataformas recomendadas
+## 4. Plataformas recomendadas
 
 ### Graph Online
 
@@ -301,7 +350,7 @@ os primeiros esboços.
 
 ------------------------------------------------------------------------
 
-## 11. Entrega das atividades
+## 5. Entrega das atividades
 
 Ao final da aula, entregue **um único documento** contendo:
 
@@ -316,23 +365,23 @@ Ao final da aula, entregue **um único documento** contendo:
 
 ------------------------------------------------------------------------
 
-## 12. Checklist de revisão
+## 6. Checklist de revisão
 
--   [ ] Identifiquei corretamente vértices e arestas.
--   [ ] Diferenciei grafo dirigido e não dirigido.
--   [ ] Identifiquei incidência e adjacência.
--   [ ] Calculei os graus quando solicitado.
--   [ ] Considerei o laço corretamente no cálculo do grau.
--   [ ] Utilizei setas nos grafos dirigidos.
--   [ ] Justifiquei a análise de isomorfismo.
--   [ ] Identifiquei corretamente os subgrafos.
--   [ ] Conferi a sequência de graus.
--   [ ] Revisei os desenhos e as justificativas.
--   [ ] Registrei a plataforma utilizada.
+-   `✔` Identifiquei corretamente vértices e arestas.
+-   `✔` Diferenciei grafo dirigido e não dirigido.
+-   `✔` Identifiquei incidência e adjacência.
+-   `✔` Calculei os graus quando solicitado.
+-   `✔` Considerei o laço corretamente no cálculo do grau.
+-   `✔` Utilizei setas nos grafos dirigidos.
+-   `✔` Justifiquei a análise de isomorfismo.
+-   `✔` Identifiquei corretamente os subgrafos.
+-   `✔` Conferi a sequência de graus.
+-   `✔` Revisei os desenhos e as justificativas.
+-   `✔` Registrei a plataforma utilizada.
 
 ------------------------------------------------------------------------
 
-## 13. Referência
+## 7. Referência
 
 GOMES, Paulo César Rodacki. **Grafos: conceitos fundamentais, algoritmos
 e aplicações**. Blumenau: Editora IFC, 2022.
