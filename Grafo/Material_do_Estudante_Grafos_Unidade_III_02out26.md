@@ -221,13 +221,11 @@ A professora apresentará dois grafos para comparação.
 
 ### Faça
 
-1.  Compare a quantidade de vértices.
-2.  Compare a quantidade de arestas.
-3.  Observe os graus dos vértices.
-4.  Procure uma correspondência entre os vértices dos dois grafos.
-5.  Verifique se as adjacências são preservadas.
-6.  Registre o mapeamento encontrado.
-7.  Conclua, justificadamente, se os grafos são isomorfos.
+1. Determine a ordem e o tamanho de cada grafo.
+2. Calcule o grau de cada vértice e escreva a sequência de graus de G e H.
+3. Procure uma correspondência entre os vértices de G e os de H.
+4. Verifique, aresta por aresta, se a correspondência preserva as adjacências.
+5. Conclua se os grafos são isomorfos e justifique.
 
 ### Registro sugerido
 
@@ -246,6 +244,28 @@ A professora apresentará dois grafos para comparação.
 -   papel;
 -   Graph Online;
 -   diagrams.net.
+
+## Resposta:
+
+1.
+   Grafo G:  
+       - Ordem: 4  
+       - Tamanho: 4  
+   Grafo H:  
+       - Ordem: 4  
+       - Tamanho: 4
+3. | Vértice do grafo G | Vértice correspondente no grafo H |
+   |--------------------|-----------------------------------|
+   | 1                  | a                                 |
+   | 2                  | c                                 |
+   | 3                  | b                                 |
+   | 4                  | d                                 |
+4. Os vértices dos grafos G e H possuem os mesmos graus 
+5. Sim, a correspondências preserva a adjacência
+6. Os grafos são isomorfos porque ambos possuem a mesma quantidade de vértices, arestas, e grau.
+Grafos:  
+![Grafo da atividade 4](./r5.png)  
+![Grafo da atividade 4](./r5(1).png)
 
 ------------------------------------------------------------------------
 
