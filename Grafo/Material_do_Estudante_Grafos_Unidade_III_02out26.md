@@ -264,8 +264,8 @@ A professora apresentará dois grafos para comparação.
 5. Sim, a correspondências preserva a adjacência
 6. Os grafos são isomorfos porque ambos possuem a mesma quantidade de vértices, arestas, e grau.
 Grafos:  
-![Grafo da atividade 4](./r5.png)  
-![Grafo da atividade 4](./r5(1).png)
+![Grafo da atividade 5](./r5.png)  
+![Grafo da atividade 5(1)](./r5(1).png)
 
 ------------------------------------------------------------------------
 
@@ -285,15 +285,17 @@ subgrafos diferentes**.
 
 **Subgrafo G1**
 
-`V1 = { }`
+`V1 = {z, y, x, w, v}`
 
-`E1 = { }`
+`E1 = {(z, w), (w, y), (y, x), (x, z), (z, v)}`  
+![Grafo da atividade 6](./r6.png)
 
 **Subgrafo G2**
 
-`V2 = { }`
+`V2 = {R1, R2, R3, R4, R5}`
 
-`E2 = { }`
+`E2 = {(R1, R3), (R3, R2), (R2, R4), (R4, R1), (R4, R5)}`  
+![Grafo da atividade 6](./r6(1).png)
 
 ### Plataformas
 
