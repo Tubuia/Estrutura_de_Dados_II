@@ -311,15 +311,15 @@ subgrafos diferentes**.
 Construa um **grafo simples** de acordo com a sequência de graus
 indicada pela professora.
 
+`(1, 1, 2, 3, 3, 4, 4, 6)`
+
 ### Faça
 
-1.  Crie os vértices necessários.
-2.  Adicione as arestas progressivamente.
-3.  Calcule o grau de cada vértice.
-4.  Organize os graus em ordem não decrescente.
-5.  Compare a sequência obtida com a sequência solicitada.
-6.  Caso não coincida, revise as arestas.
-
+1. Identifique oito vértices (por exemplo, A, B, C, D, E, F, G e H).
+2. Comece pelo vértice de maior grau e adicione as arestas sem laços ou arestas paralelas.
+3. Registre o conjunto E das arestas que você construiu.
+4. Calcule o grau de cada vértice e ordene os resultados.
+5. Verifique a soma dos graus e compare com duas vezes o número de arestas.
 ### Registro
 
   Vértice     Grau
@@ -336,6 +336,26 @@ indicada pela professora.
 -   papel;
 -   Graph Online;
 -   Python/NetworkX no Google Colab.
+
+## Resposta:  
+
+Grafo:  
+![Grafo da atividade 7](./r7.png)  
+
+| Vértice | Grau |
+|---------|------|
+| A       | 6    |
+| B       | 4    |
+| C       | 4    |
+| D       | 3    |
+| E       | 3    |
+| F       | 2    |
+| G       | 1    |
+| H       | 1    |
+
+5.  
+- Soma dos Graus = 24  
+- 2x numero de arestas = 12 * 2 = 24 
 
 ------------------------------------------------------------------------
 
