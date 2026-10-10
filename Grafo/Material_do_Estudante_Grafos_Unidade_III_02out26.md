@@ -328,7 +328,7 @@ indicada pela professora.
             
             
 
-**Sequência final de graus:** `((1, 1, 2, 3, 3, 4, 4, 6))`
+**Sequência final de graus:** `(1, 1, 2, 3, 3, 4, 4, 6)`
 
 ### Plataformas
 
