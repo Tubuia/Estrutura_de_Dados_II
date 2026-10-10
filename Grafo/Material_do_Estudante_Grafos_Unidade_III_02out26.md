@@ -311,7 +311,6 @@ subgrafos diferentes**.
 Construa um **grafo simples** de acordo com a sequência de graus
 indicada pela professora.
 
-`(1, 1, 2, 3, 3, 4, 4, 6)`
 
 ### Faça
 
@@ -329,7 +328,7 @@ indicada pela professora.
             
             
 
-**Sequência final de graus:** `( ______________________________ )`
+**Sequência final de graus:** `((1, 1, 2, 3, 3, 4, 4, 6))`
 
 ### Plataformas
 
