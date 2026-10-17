@@ -103,12 +103,16 @@ A lista de adjacência registra, para cada usuário, os nomes de seus amigos. Di
 
 ```python
 rede = {
-    "Ana": ["Bruno", "Carla"],
-    "Bruno": ["Ana", "Carla", "Diego"],
-    "Carla": ["Ana", "Bruno", "Elisa"],
-    "Diego": ["Bruno", "Elisa", "Felipe"],
-    "Elisa": ["Carla", "Diego", "Felipe"],
-    "Felipe": ["Diego", "Elisa"]
+    "Ana": ["Bruno", "Carla",'Arthur', 'Douglas'],
+    "Bruno": ["Ana", "Carla", "Diego",'Arthur'],
+    "Carla": ["Ana", "Bruno", "Elisa",'Arthur'],
+    "Diego": ["Bruno", "Elisa", "Felipe", 'João'],
+    "Elisa": ["Carla", "Diego", "Felipe", 'João'],
+    "Felipe": ["Diego", "Elisa", 'Esdras'],
+    'Arthur': ['Ana', 'Bruno', 'Carla', 'João', 'Esdras', 'Douglas'],
+    'João': ['Arthur', 'Diego', 'Elisa', 'Esdras', 'Douglas'],
+    'Esdras': ['Arthur', 'João', 'Felipe', 'Douglas'],
+    'Douglas': ['João', 'Ana', 'Esdras', 'Arthur']
 }
 
 # Quantidade de usuarios
