@@ -23,6 +23,10 @@ Neste projeto, a amizade é recíproca. Portanto, usamos um **grafo não direcio
 | D | Diego |
 | E | Elisa |
 | F | Felipe |
+| G | Arthur |
+| H | João |
+| I | Esdraz |
+| J | Douglas |
 
 As amizades são:
 1. Ana — Bruno
@@ -41,22 +45,26 @@ As amizades são:
 4. Não desenhe duas linhas para a mesma amizade.
 5. Confira se todas as oito amizades aparecem.
 
-**Espaço para o seu desenho:** faça o grafo no caderno ou em uma ferramenta de desenho.
+![Grafo](https://graphonline.top/tmp/saved/ib/ibFVUYpGRZorgINH.png)
 
 ## 5. Passo a passo: calcule o grau
 Conte quantas linhas chegam a cada círculo. Registre o resultado.
 
 | Usuário | Amigos diretos | Grau |
 |---|---|---:|
-| Ana | __________________ | ____ |
-| Bruno | __________________ | ____ |
-| Carla | __________________ | ____ |
-| Diego | __________________ | ____ |
-| Elisa | __________________ | ____ |
-| Felipe | __________________ | ____ |
+| Ana | 4 | 4 |
+| Bruno | 4 | 4 |
+| Carla | 4 | 4 |
+| Diego | 4 | 4 |
+| Elisa | 4 | 4 |
+| Felipe | 3 | 3 |
+| Arthur | 6 | 6 |
+| João | 5 | 5 |
+| Esdraz | 4 | 4 |
+| Douglas | 4 | 4 |
 
 **Pergunta 1:** quem tem mais conexões diretas?  
-Resposta: __________________________________________________
+Resposta: Arthur
 
 ## 6. Passo a passo: calcule o número de amizades
 Some todos os graus. Como cada amizade conecta dois usuários, cada aresta é contada duas vezes.
@@ -64,9 +72,9 @@ Some todos os graus. Como cada amizade conecta dois usuários, cada aresta é co
 **Fórmula:**  
 `Número de arestas = soma dos graus ÷ 2`
 
-1. Soma dos graus: ______
-2. Divida por 2: ______ ÷ 2 = ______
-3. Quantas amizades existem no grafo? ______
+1. Soma dos graus: 42
+2. Divida por 2: 42 ÷ 2 = 21
+3. Quantas amizades existem no grafo? 21
 
 ## 7. Passo a passo: calcule a densidade
 A densidade compara as amizades existentes com o total de amizades possíveis.
@@ -81,14 +89,14 @@ Em que:
 - `V` = número de vértices.
 
 Substitua os valores:
-`D = 2 × ____ / (____ × (____ − 1))`
+`D = 2 × 21 / (10 × (10 − 1))`
 
-Resultado decimal: __________  
-Resultado percentual: __________ %
+Resultado decimal: 2,14  
+Resultado percentual: 214 %
 
 **Interprete:** a rede tem poucas ou muitas das conexões possíveis? Explique com suas palavras.
 
-________________________________________________________________
+Resposta: A rede tem muitas conexões, já que ela tem o dobro de conexões do que o numero de usuarios
 
 ## 8. Passo a passo: represente o grafo em Python
 A lista de adjacência registra, para cada usuário, os nomes de seus amigos. Digite o código em Python (por exemplo, no Google Colab ou em outro ambiente disponível).
