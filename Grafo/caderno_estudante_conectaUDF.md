@@ -64,7 +64,7 @@ Conte quantas linhas chegam a cada círculo. Registre o resultado.
 | Douglas | 4 | 4 |
 
 **Pergunta 1:** quem tem mais conexões diretas?  
-Resposta: Arthur
+**Resposta:** Arthur
 
 ## 6. Passo a passo: calcule o número de amizades
 Some todos os graus. Como cada amizade conecta dois usuários, cada aresta é contada duas vezes.
@@ -96,7 +96,7 @@ Resultado percentual: 214 %
 
 **Interprete:** a rede tem poucas ou muitas das conexões possíveis? Explique com suas palavras.
 
-Resposta: A rede tem muitas conexões, já que ela tem o dobro de conexões do que o numero de usuarios
+**Resposta:** A rede tem muitas conexões, já que ela tem o dobro de conexões do que o numero de usuarios
 
 ## 8. Passo a passo: represente o grafo em Python
 A lista de adjacência registra, para cada usuário, os nomes de seus amigos. Digite o código em Python (por exemplo, no Google Colab ou em outro ambiente disponível).
@@ -134,6 +134,23 @@ densidade = (2 * arestas) / (n * (n - 1))
 print(f"Densidade: {densidade:.2%}")
 ```
 
+### Saída do Código Executado: https://github.com/Tubuia/Estrutura_de_Dados_II/blob/main/Grafo/Grafo_Analise_Rede_Social.ipynb  
+```
+Ana tem 4 conexoes
+Bruno tem 4 conexoes
+Carla tem 4 conexoes
+Diego tem 4 conexoes
+Elisa tem 4 conexoes
+Felipe tem 3 conexoes
+Arthur tem 6 conexoes
+João tem 5 conexoes
+Esdras tem 4 conexoes
+Douglas tem 4 conexoes
+Total de usuarios: 10
+Total de amizades: 21
+Densidade: 46.67%
+```
+
 ### Entenda o código
 1. `rede` guarda os usuários e suas listas de amigos.
 2. `len(rede)` conta os usuários.
@@ -146,12 +163,14 @@ print(f"Densidade: {densidade:.2%}")
 Encontre um caminho de Ana até Felipe. Cada passagem por uma linha corresponde a uma aresta.
 
 Exemplo de registro:
-`Ana → __________ → __________ → Felipe`
+`Ana → Bruno → Diego → Felipe`
 
-- Quantas arestas há no caminho? ______
+- Quantas arestas há no caminho?
 - Você encontrou outro caminho com a mesma quantidade de arestas? Qual?
 
-________________________________________________________________
+**Resposta:**  
+1 - há 3 arestas no caminho  
+2 - Sim. Ana → Arthur → Esdraz → Felipe  
 
 ## 10. Desafio em grupo
 Amplie a rede social:
@@ -172,4 +191,18 @@ Entregue:
 - respostas às perguntas e breve conclusão.
 
 ## 12. Pergunta de reflexão
-Duas pessoas ainda não são amigas, mas têm três amigos em comum. Como essa informação poderia ser usada para sugerir uma nova conexão? Quais cuidados de privacidade devem ser considerados ao analisar redes sociais?
+Duas pessoas ainda não são amigas, mas têm três amigos em comum. Como essa informação poderia ser usada para sugerir uma nova conexão? Quais cuidados de privacidade devem ser considerados ao analisar redes sociais?  
+
+**Resposta:**  
+Três amigos em comum podem indicar que as duas provavelmente pessoas frequentam os mesmos círculos. A rede pode contar os vizinhos compartilhados de cada par e sugerir as conexões com contagem mais alta. Esse princípio é chamado de fechamento triádico ("amigos de amigos").
+
+Cuidados de privacidade ao analisar redes sociais:
+
+- Pedir consentimento e ser transparente sobre o uso dos dados de conexões.
+- Evitar sugestões que exponham relações sensíveis.
+- Permitir que o usuário opte por não aparecer como sugestão.
+- Minimizar e anonimizar os dados nas análises, respeitando leis como a LGPD.
+
+## 13. Conclusão
+
+Representar a rede social ConectaUDF como grafo permitiu medir a rede com poucas fórmulas: o grau mostra quem é mais conectado, a soma dos graus dividida por 2 dá o número de amizades, e a densidade indica quanto da rede possível já existe. A contagem de amigos em comum é uma forma simples e eficaz de recomendar amizades, desde que acompanhada de cuidados com a privacidade.
