@@ -146,6 +146,103 @@ for nome, rede in [("Normal", grafo),
 - Diagrama do grafo e evidências dos testes.
 - Apresentação individual sugerida de **5 minutos**, demonstrando a execução e justificando escolhas.
 
+## Entrega: 
+### Grafo: 
+![Grafo](https://graphonline.top/tmp/saved/YZ/YZsZymHMmBkYGQKW.svg)
+### Grafo com bloqueio
+![Grafo](https://graphonline.top/tmp/saved/YO/YOwVSkEnOjBbRwCd.svg)
+### Codigo:
+```python
+from collections import deque
+
+grafo = {
+    "BSB": ["GRU", "GYN", "FOR", "GIG"],
+    "GRU": ["BSB", "MAO", "GIG", "JOI"],
+    "GYN": ["JOI", "FOR", "BSB"],
+    "FOR": ["BSB", "GYN"],
+    "GIG": ["BSB", "GRU"],
+    "MAO": ["JOI", "GRU"],
+    "JOI": ["MAO", "GRU", "GYN"] 
+}
+
+def bfs(rede, origem, destino):
+    fila = deque([(origem, [origem])])
+    visitados = {origem}
+    while fila:
+        atual, caminho = fila.popleft()
+        if atual == destino:
+            return caminho
+        for vizinho in rede.get(atual, []):
+            if vizinho not in visitados:
+                visitados.add(vizinho)
+                fila.append((vizinho, caminho + [vizinho]))
+    return None
+
+def dfs(rede, origem, destino):
+    pilha = [(origem, [origem])]
+    visitados = set()
+    while pilha:
+        atual, caminho = pilha.pop()
+        if atual in visitados:
+            continue
+        visitados.add(atual)
+        if atual == destino:
+            return caminho
+        for vizinho in reversed(rede.get(atual, [])):
+            if vizinho not in visitados:
+                pilha.append((vizinho, caminho + [vizinho]))
+    return None
+
+def bloquear_conexao(rede, a, b):
+    copia = {no: vizinhos.copy() for no, vizinhos in rede.items()}
+    if b in copia.get(a, []):
+        copia[a].remove(b)
+    if a in copia.get(b, []):
+        copia[b].remove(a)
+    return copia
+
+
+while True:
+    origem = input("Cidade a sair: ")
+    if origem in grafo.keys():
+        break
+    print("Cidade fora do grafo!")
+
+while True:
+    destino = input("Cidade a ir: ")
+    if destino in grafo.keys():
+        break
+    print("Cidade fora do grafo!")
+
+entrada_bloqueio = input('Digite a aresta indisponível (padrão vertice1-vertice2): ')
+
+bloqueio = entrada_bloqueio.replace('-', ' ').split()
+
+
+
+
+for nome, rede in [("Normal", grafo),
+                   (f"Bloqueio {bloqueio[0]}–{bloqueio[1]}", bloquear_conexao(grafo, bloqueio[0], bloqueio[1]))]:
+    print("\nCenário:", nome)
+    print("BFS:", bfs(rede, origem, destino))
+    print("DFS:", dfs(rede, origem, destino))
+```
+## Saida do Codigo:  
+https://github.com/Tubuia/Estrutura_de_Dados_II/blob/main/Grafo/Grafos_BFS_DFS.ipynb
+```
+Cidade a sair: JOI
+Cidade a ir: FOR
+Digite a aresta indisponível (padrão vertice1-vertice2): JOI-GYN
+
+Cenário: Normal
+BFS: ['JOI', 'GYN', 'FOR']
+DFS: ['JOI', 'MAO', 'GRU', 'BSB', 'GYN', 'FOR']
+
+Cenário: Bloqueio JOI–GYN
+BFS: ['JOI', 'GRU', 'BSB', 'FOR']
+DFS: ['JOI', 'MAO', 'GRU', 'BSB', 'GYN', 'FOR']
+```
+
 ### Critérios sugeridos de avaliação (10 pontos)
 
 | Critério | Pontos |
