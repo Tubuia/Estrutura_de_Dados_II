@@ -262,6 +262,14 @@ DFS: ['JOI', 'MAO', 'GRU', 'BSB', 'GYN', 'FOR']
 5. Quais informações adicionais seriam necessárias para avaliar tempo ou custo de uma rota?
 6. Por que o resultado do algoritmo não pode ser usado para orientar um voo real?
 
+### Respostas:
+1. Porque um grafo permite que um ponto tenha várias conexões, inclusive formando ciclos, enquanto uma árvore binária limita cada nó a dois filhos.
+2. Quando todas as conexões têm o mesmo peso. “Menor” significa o caminho com menos conexões (arestas).
+3. Porque a DFS explora um caminho até o fim, enquanto a BFS explora primeiro os vizinhos mais próximos.
+4. O algoritmo pode visitar os mesmos pontos várias vezes ou ficar preso em ciclos infinitos.
+5. Distância, tempo de viagem, combustível e condições do percurso.
+6. Porque não considera fatores como clima, ventos, altitude, tráfego aéreo, combustível e regras de segurança.
+
 ## 10. Referências
 
 GOMES, Paulo César Rodacki. **Grafos: conceitos fundamentais, algoritmos e aplicações**. Blumenau: Editora IFC, 2022. ISBN 978-65-88089-12-5. (Capítulos 1, 2 e 3; capítulo 7 para aprofundamento.)
